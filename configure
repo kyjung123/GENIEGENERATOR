@@ -98,7 +98,7 @@ if(-e $BANNER_FILE) {
 
 # Check that ROOT can be seen
 #
-`hash root-config`;
+`which root-config`;
 $HAVE_ROOT_CONFIG = $?;
 die ("*** Error *** Cannot find root-config. Is ROOT installed?")
 unless $HAVE_ROOT_CONFIG == 0;
